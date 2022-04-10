@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(49, 49, 49);
+}
+
+input:focus {
+    outline:none;
+}
+
+#word_view{
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(144, 144, 144);
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+}
+
+h1{
+    font-size: 40px;
+    transition: 0.1s;
+}
+
+h1:hover{
+    color:rgb(95, 95, 95);
+}
+
+.word{
+    width: 800px;
+    height: 150px;
+    display: block;
+    color:rgb(144, 144, 144);
+    transition: 0.1s;
+    margin-bottom: 50px;
+}
+
+.word:hover{
+    color:rgb(95, 95, 95);
+}
+
+.word:hover > .kor{
+    color:rgb(95, 95, 95);
+    border-color: rgb(95, 95, 95);
+}
+
+.word .eng{
+    text-align: left;
+    padding-top: 5px;
+    font-size: 40px;
+    height: 50%;
+}
+
+.word .eng::after{
+    margin-left: 20px;
+}
+
+.word .word_none::after{
+    content:'';
+}
+
+.word .word_right::after{
+    content:'O';
+    color:rgb(20, 216, 20);
+}
+
+.word .word_wrong::after{
+    content:'X';
+    color:rgb(216, 20, 20);
+}
+
+.word .kor{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-bottom: 3px solid rgb(144, 144, 144);
+    color:rgb(144, 144, 144);
+    padding-left: 10px;
+    height: 45%;
+    width: 95%;
+    font-size: 40px;
+}
+
+#button_nav{
+    display: flex;
+}
+
+.btn{
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: rgba(253, 253, 253, 0);
+    border: 3px solid rgba(0, 0, 0, 0.287);
+    border-radius: 15px;
+    color:rgba(0, 0, 0, 0.287);
+    font-size: 30px;
+    transition: 0.1s;
+}
+
+.btn:hover{
+    color:rgb(116, 116, 116);
+    border: 3px solid rgb(116, 116, 116);
+}
+
+#right_count{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
